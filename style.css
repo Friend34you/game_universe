@@ -1,0 +1,1086 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap');
+
+*
+{
+    margin: 0px;
+    padding: 0px;
+
+    font-family: Oswald;
+    font-style: normal;
+    font-weight: 500;
+}
+
+a
+{
+    text-decoration: none;
+    color: inherit;
+}
+
+.categories_nav_wrapper
+{
+    background-color: #0DCDFB ;
+    box-shadow: 6px 8px 8px -2px rgba(0, 0, 0, 0.25);
+    width: auto;
+    height: 90px;
+    margin-bottom: 20px;
+}
+
+.header_space
+{
+    background: linear-gradient(116.04deg, #0DCDFB 26.15%, #FF1CB2 101.25%);
+}
+
+.header_magic
+{
+    background: linear-gradient(116.04deg, #0DCDFB 26.15%, #FF6D1C 101.25%);
+}
+
+.header_party
+{
+    background: linear-gradient(116.04deg, #0DCDFB 26.15%, #DFFF1C 101.25%);
+}
+
+.header_ccg
+{
+    background: linear-gradient(116.04deg, #0DCDFB 26.15%, #FF1C37 101.25%);
+}
+
+.categories_nav_wrapper .main_img
+{
+    top: 10px;
+    left: 10px;
+}
+
+.categories_nav_wrapper .shop_name
+{
+    color: white;
+}
+
+.nav_back1, .nav_back2, .nav_back3
+{
+    text-align: center;
+    display: inline-block;
+    border: white 3px solid;
+    transition: linear 0.3s;
+    border-radius: 20px;
+    padding: 3px;
+}
+
+.nav_back1
+{
+    width: 90px;
+}
+
+.nav_back2
+{
+    width: 70px;
+}
+
+.nav_back3
+{
+    width: 140px;
+}
+
+.nav_back1:hover, .nav_back2:hover, .nav_back3:hover
+{
+    border: white 3px solid;
+    background-color: white;
+    transition: linear 0.3s;
+}
+
+.categories_nav_wrapper ul
+{
+    margin: 0px;
+    padding: 25px  100px 0px 0px;
+}
+
+.categories_nav_wrapper li
+{
+    color: white;
+    border-bottom: none;
+    margin: 0px 20px;
+}
+
+.categories_nav_wrapper li:hover
+{
+    border-bottom: none;
+    color: black;
+}
+
+nav
+{
+    position: relative;
+    z-index: 2;
+}
+
+nav ul
+{
+    z-index: 2;
+    list-style-type: none;
+    text-align: end;
+    margin-right: 100px;
+    margin-top: 25px;
+}
+
+nav li
+{
+    display: inline;
+    font-family: Oswald;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    margin: 0px 30px;
+    border-bottom: solid 4px #FFC106;
+    transition: linear 0.2s;
+}
+
+nav li:hover
+{
+    border-bottom: solid 4px #FF0623;
+    transition: linear 0.2s;
+}
+
+
+.main_img
+{
+    z-index: auto;
+    width: 110px;
+    height: 110px;
+    background-image: url(вселенная512.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    left: 10px;
+    top:-15px;
+}
+
+.nav_menu_burger
+{
+    display: flex;
+    flex-direction: column;
+    margin: 0px auto;
+    justify-content: flex-end;
+    padding: 10px;
+    text-align: center;
+    background-color: #0DCDFB;
+    position: relative;
+    height: 200px;
+    border-bottom: none;
+    z-index: 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 6px 8px 8px -2px rgba(0, 0, 0, 0.25);
+}
+
+.nav_menu_burger li
+{
+    color: white;
+    border-bottom: none;
+    padding: 10px;
+    display: inline-block;
+}
+
+.burger_btn
+{   user-select: none;
+    display: none;
+    top: 5px;
+    left:88%;
+    position: absolute;
+    z-index: 5;
+    font-size: 40px;
+    font-family: Oswald;
+    font-weight: bold;
+}
+
+.shop_name
+{
+    position: absolute;
+    font-size: 20px;
+    top: 15px;
+    left: 50px;
+    opacity: 0;
+    transition: ease 0.6s;
+    z-index: -1;
+    line-height: 20px;
+}
+
+.main_img:hover  .shop_name
+{
+    opacity: 1;
+    transform: translateX(50px);
+    transition: ease 0.6s;
+}
+
+
+/*СЛАЙДЕР*/
+.slider
+{
+    position: relative;
+    z-index: 0;
+    margin-top: -55px;
+    height: 500px;
+}
+
+.slider p
+{
+    display: block;
+    width: 450px;
+    font-size: 20px;
+    font-weight: normal;
+    padding: 0px 130px;
+    z-index: 0;
+    
+}
+
+.slider h1
+{
+    padding: 90px 130px 0px;
+    color: #FFC106;
+    font-size: 70px;
+    
+}
+
+.slide1, .slide2, .slide3
+{
+    transition: linear 0.3s;
+}
+
+.slide1
+{
+    height: inherit;
+    background-image: url(стр_фон_карты.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+     
+}
+
+.slide2
+{
+    height: inherit;
+    background-image: url(стр_фон_карты2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;  
+}
+
+.slide3
+{
+    height: inherit;
+    background-image: url(стр_фон_карты3.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;  
+}
+
+.slides_btn
+{
+    font-size: 26px;
+    width: 230px;
+    height: 50px;
+    background-color:#0DCDFB;
+    border-radius: 30px;
+    border: none;
+    margin: 30px 140px 0px;
+    transition: ease-in 0.15s;
+}
+
+.slides_btn:hover
+{
+    color: white;
+    opacity: 0.6;
+    transition: ease-in 0.15s;
+}
+
+.slides_btn:active
+{
+    background-color: #FF0623;
+    opacity: 1;
+}
+
+.btn_right, .btn_left
+{
+    position: absolute;
+    top: 50%;
+    display: inline-block;
+ 
+    width: 50px;
+    height: 50px;
+    background-color: #0DCDFB;
+    border-radius: 40px;
+    text-align:center ;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 43px;
+    color: black;
+    z-index: 4;
+    user-select:none;
+    transition: ease-in 0.15s;
+}
+.btn_left:hover, .btn_right:hover
+{
+    color: white;
+    opacity: 0.6;
+    transition: ease-in 0.15s;
+}
+.btn_left:active, .btn_right:active
+{
+    background-color: #FF0623;
+    opacity: 1;
+}
+
+.btn_right
+{
+    left:92%; 
+}
+
+
+.btn_left
+{
+    right:92%; 
+}
+
+.slider ul
+{
+    width: 100%;
+    top: 90%;
+    position: absolute;
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    align-items: flex-end;
+    z-index: 0;
+    color: #0DCDFB;
+}
+
+.slider li
+{
+    margin: 0px 5px;
+    font-size: 40px;
+    user-select:none;
+}
+
+.sl_li1
+{
+    color: #FF0623;
+}
+
+.slider a
+{
+    display: block;
+    width: inherit;
+}
+
+/*КАТАЛОГ*/
+
+.wrapper
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0DCDFB;
+    height: 140px;
+}
+
+
+.wrapper div
+{
+    background-color: #0DCDFB;
+    position: relative;
+    display: flex;
+    margin: 35px 10px 0px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 70px;    
+    height: 90px;  
+    width: 90px;
+    transition: ease 0.5s;
+}
+
+.wrapper img
+{
+    width: 75px;
+    transition: ease-out 0.4s;
+}
+
+.wrapper p
+{
+    font-size: 20px;
+    opacity: 0;
+    transition: ease-in 0.2s;
+    position: relative;
+    z-index:1 ;
+    user-select: none;
+}
+
+.wrapper div:hover
+{
+    transition: ease-out 0.4s;
+    box-shadow: 15px 16px 12px -7px rgba(0, 0, 0, 0.25);
+    height: 190px;
+    width: 190px;
+    border-radius: 100px; 
+    margin: 0px 10px;
+}
+
+.wrapper div:hover p
+{
+    font-size: 57px;
+    transition: ease-out 0.2s;
+    opacity: 1;
+}
+
+.wrapper div:hover img
+{
+    margin-top: 18px;
+    height: 95px;
+    width: 95px;
+    transition: linear 0.2s;
+}
+
+.catalog_space:hover
+{
+    background: linear-gradient(116.04deg, #0DCDFB 26.15%, #FF1CB2 91.25%);  
+}
+
+.catalog_arcane:hover
+{
+    background: linear-gradient(116.04deg, #0DCDFB 26.15%, #FF6D1C 89.55%);
+}
+
+.catalog_friends:hover
+{
+    background: linear-gradient(116.04deg, #0DCDFB 26.15%, #DFFF1C 91.25%);
+}
+
+.catalog_cards:hover
+{
+    background: linear-gradient(116.04deg, #0DCDFB 26.15%, #FF1C37 91.25%);
+}
+
+/*Заголовок для "Хитов"*/
+.hits_title
+{
+    background-color: white;
+}
+
+.hits_title h2
+{
+    font-size: 50px;
+    display: inline-block;
+    margin-left: 55px;
+    margin-top: 45px;
+    
+}
+
+.hits_title_description
+{
+    margin: 5px 72px 20px;
+    padding: 10px 20px;
+    background-color: #FFC106;
+    text-align: justify;
+    box-shadow: 6px 8px 8px -2px rgba(0, 0, 0, 0.25);
+}
+
+.hits_title_description p
+{
+    font-size: 20px;
+}
+
+/*Карточки для хитов*/
+.tagname
+{
+    width: 800px;
+}
+
+.block
+{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 6px 6px 14px rgba(0, 0, 0, 0.25);
+    margin: 15px 0px;
+    padding: 30px 20px 10px;
+
+    transition: ease-in 0.3s;
+}
+
+.img_title_link
+{
+    margin: 30px 30px 0px;
+}
+
+.container-fluid
+{
+    padding: 0px 40px;
+}
+
+
+.block_title
+{
+    display: inline-block;
+    text-align: center;
+    font-size: 20px;
+    margin: 20px 0px 0px;
+}
+
+.tagline
+{
+    display: inline-block;
+    margin: 20px 0px 0px;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.img_container img
+{
+    height:180px;
+}
+
+.price_button
+{
+    user-select: none;
+    margin: 30px 10px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 40px;
+    background-color: #0DCDFB;
+    border-radius: 20px;
+    transition: ease-in 0.15s;
+}
+
+.price_button:hover
+{
+    color: white;
+    opacity: 0.6;
+    transition: ease-in 0.15s;
+}
+
+.price_button:active
+{
+    background-color: #FF0623;
+    opacity: 1;
+}
+
+.block_icons
+{
+    user-select: none;
+    display: flex;
+    opacity: 0;
+    width: auto;
+    align-items: center;
+    transition: linear 0.3s;
+}
+
+.block_icons *
+{
+    margin: 0px 3px 0px;
+    
+}
+
+.age_warning
+{
+    margin: 0px 10px;
+    font-size: 26px;
+}
+
+.block:hover .block_icons
+{
+    opacity: 1;
+}
+
+.block:hover
+{
+    transition: ease-in 0.3s;
+    transform:scale(1.05);
+}
+
+/*Карточка товара*/
+.product
+{
+    margin: 5px 60px;
+}
+
+.product .block_icons
+{
+    opacity: 1;
+}
+
+.main_part
+{
+    display: flex;
+    justify-content: center;
+    margin:40px 30px 0px;
+}
+
+.product_main
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 90px;
+}
+
+.product_title_back
+{
+    background-color: #FFC106;
+    text-align: center;
+    font-size: 40px;
+    width: auto;
+    border: solid 5px #FFC106;
+    box-shadow: 6px 8px 8px -2px rgba(0, 0, 0, 0.25);
+}
+
+.product_title_back p 
+{
+    font-weight: normal;
+}
+
+.video
+{
+    width:60%;
+    height: 500px;
+}
+
+.product .price_button
+{
+    font-size: 30px;
+    width: 400px;
+    height: 60px;
+    font-weight: normal;
+    border-radius: 50px;
+
+}
+
+.product_price
+{
+    font-size: 40px;
+}
+
+.product_img
+{
+    display: inline-flex;
+    justify-content: center;
+    width: 70%;
+}
+
+.product_img img
+{
+    width: 100%;
+}
+
+.subtitle_back
+{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    height: 63px;
+    width: 200px;
+    border-bottom: solid 8px #FFC106;
+}
+
+.product_subtitle
+{
+    font-size: 40px;  
+}
+
+.product_description
+{
+    font-size: 20px;
+    line-height: 30px;
+}
+
+/*Футер*/
+.footer_inner
+{
+    background-color: #0DCDFB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer_inner ul
+{
+    font-size: 20px;
+    text-align: center;
+}
+
+.footer_inner li
+{
+    padding: 10px 0px 0px;
+    margin: 10px;
+    display: inline-block;
+    transition: linear 0.3s;
+}
+
+.footer_inner li:hover
+{
+    color: white;
+    transition: linear 0.3s;
+}
+
+.footer_inner p
+{
+    text-align: center;
+    display: block;
+    width: 250px;
+    font-weight: normal;
+    font-size: 15px;
+    color: white;
+    margin: 5px;
+}
+
+footer > p
+{
+    display: block;
+    width: 400px;
+    font-size: 18px;
+    position: relative;
+    top:100px;
+    left: 72px;
+    
+}
+
+.footer_space
+{
+    background: linear-gradient(116.04deg, #0DCDFB 26.15%, #FF1CB2 101.25%);
+}
+
+.footer_magic
+{
+    background: linear-gradient(116.04deg, #0DCDFB 26.15%, #FF6D1C 101.25%);
+}
+
+.footer_party
+{
+    background: linear-gradient(116.04deg, #0DCDFB 26.15%, #DFFF1C 101.25%);
+}
+
+.footer_ccg
+{
+    background: linear-gradient(116.04deg, #0DCDFB 26.15%, #FF1C37 101.25%);
+}
+
+@media screen and (max-width:1100px) 
+{
+    footer > p
+    {
+        display: block;
+        width: 200px;
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:1080px)
+{
+ 
+
+    .product
+    {
+        margin: 20px;
+    }
+    .main_part
+    {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .product_img
+    {
+      width: 100%;
+    }
+} 
+
+@media screen and (max-width:840px) 
+{
+    footer > p
+    {
+        background-color: #0DCDFB;
+        position: static;
+        display: block;
+        width: auto;
+        text-align: center;
+        padding: 10px;
+        margin: 8px;
+        font-size: 14px;
+        border-radius: 45px;
+    }
+
+    .video
+    {
+        width: auto;
+        height: 300px;
+    }
+
+}
+
+@media screen and (max-width:715px) 
+{
+
+    .product_title_back
+    {
+        font-size: 30px;
+    }
+    .product .price_button
+    {
+        display: flex;
+        margin: auto;
+        text-align: center;
+        width: 200px;
+        font-size: 20px;
+    }
+
+    .categories_nav_wrapper ul
+    {
+        padding: 40px 0px 10px;
+    }
+
+    nav li
+    {
+        display: none;
+    }
+
+    .burger_btn
+    {
+        display: block;
+    }
+
+
+    .main_img
+    {
+        left: 0px;
+        top: 70px;
+        width: 90px;
+        height: 90px;
+    }
+
+    .shop_name
+    {
+        display: none;
+    }
+
+    .slider
+    {
+        margin-top: -90px;
+    }
+
+    .slider p
+    {
+        display: block;
+        width: auto;
+        font-size: 20px;
+        padding: 0px 80px;
+    }
+
+    .slider h1
+    {
+        padding: 90px 80px 0px;
+        font-size: 60px;
+    }
+
+    .btn_right
+    {
+        left:88%; 
+    }
+
+
+    .btn_left
+    {
+        right:88%; 
+    }
+
+    .slides_btn
+    {
+        display: block;
+        margin: 30px auto 0px;
+    }
+
+    .hits_title 
+    {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .hits_title h2
+    {
+        font-size: 30px;
+        margin: 15px 20px;
+        line-height: 30px;
+
+    }
+
+    .hits_title_description
+    {
+        margin: 0px 10px;
+    }
+
+    .hits_title_description p
+    {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:560px) 
+{
+    
+    .slider
+    {
+        height: 550px;
+    }
+
+    .slider h1
+    {
+        font-size: 35px;
+    }
+
+}
+
+@media screen and (max-width:440px)
+{   
+    .product
+    {
+        margin: auto 10px;
+    }
+
+    .product_description
+    {
+        font-size: 18px;
+        line-height: 24px;
+        text-align: justify;
+    }
+    .product_subtitle
+    {
+        font-size: 35px;
+    }
+
+    .main_part
+    {
+        margin: auto 10px;
+    }
+
+    .main_img
+    {
+        left: 0px;
+        top: 70px;
+        width: 70px;
+        height: 70px;
+    }
+
+    .burger_btn
+    {
+        left:85%;
+    }
+
+    .slider p
+    {
+        display: block;
+        width: auto;
+        font-size: 20px;
+        padding: 0px 50px;
+    }
+
+    .slider h1
+    {
+        padding-left: 50px;
+    }
+
+    .container-fluid
+    {
+        padding: 0px 20px ;
+    }
+
+    .btn_right, .btn_left
+    {
+        width: 35px;
+        height: 35px;
+        font-size: 30px;
+        line-height: 30px;
+    }
+
+    .slides_btn
+    {
+        height: 40px;
+        width: 160px;
+        font-size: 20px;
+        display: block;
+        margin: 30px auto 0px;
+    }
+
+    .wrapper img
+    {
+        width: 60px;
+    }
+
+    .wrapper div:hover img
+    {
+        width: 70px;
+    }
+
+    .wrapper div:hover p
+    {
+        font-size: 40px;
+    }
+
+    .wrapper div
+    {
+        width: 60px;
+        height: 60px;
+    }
+
+    .wrapper div:hover
+    {
+        transition: ease-out 0.4s;
+        box-shadow: 15px 16px 12px -7px rgba(0, 0, 0, 0.25);
+        height: 150px;
+        width: 150px;
+        border-radius: 100px; 
+        margin: 0px 10px;
+    }
+} 
+
+@media screen and (max-width:360px)
+{
+    .product_title_back
+    {
+        font-size: 26px;
+    }
+
+    .nav_menu_burger
+    {
+        height: 130px;
+    }
+    .main_img
+    {
+        position: static;
+        height: 90px;
+        background-color: #0DCDFB;
+        width: 100%;
+        box-shadow: 15px 16px 12px -7px rgba(0, 0, 0, 0.25);
+        background-position: left;
+        background-size:contain;
+        box-shadow: none;
+    }
+    
+
+    .slider
+    {
+        margin-top: -120px;
+    }
+}
+
+@media screen and (max-width:344px)
+{
+    .slider p
+    {
+        font-size: 18px;
+    }
+}
